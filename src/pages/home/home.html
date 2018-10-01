@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      SQLite Test
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="saveData()">Insert</button>
+  <button ion-button (click)="findNames()">Select Names</button>
+  <button ion-button color="danger" (click)="removeData()">Drop Table</button>
+  <!-- <h1 *ngIf="names">Nomes:</h1>
+  <ng-template *ngFor="let item of names">
+    <p>{{ item }}</p>
+  </ng-template> -->
+
+  <h2>Resposta do insert:</h2>
+  <p>{{ insert_res }}</p>
+
+  <h2>Resposta do select:</h2>
+  <p>{{ select_res }}</p>
+
+  <h2>Valor da variável nomes:</h2>
+  <p>{{ names_value }}</p>
+</ion-content>
